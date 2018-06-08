@@ -1,6 +1,6 @@
 # 2D Unity Game Jam Template
 
-This is a project template for getting up-and-running quickly for game jams. It is set up for creating a 2D game in Unity. Included are a bunch of common plugins, code and prefabs that I use when developing games. This is to save on overhead that would otherwise occur during the jam, setting up a new project and copying over any specific library code from other games.
+This is a project template for getting up-and-running quickly for game jams. It is configured for creating 2D games in Unity. Included are a bunch of common plugins, code and prefabs that I use when developing games. This is to save on overhead that would otherwise occur during the jam, setting up a new project and copying over any specific library code from other games.
 
 The code included is all focused on automation and making code easier to write, it does not "pre-code" any features or mechanics. 
 
@@ -21,7 +21,7 @@ The project currently includes:
     - Written by me, for adding juice to your game.
   - A bunch of utility extension methods 
     - Vector extensions for fluently manipulating vectors
-    Texture extensions for performing common operations on textures
+    - Texture extensions for performing common operations on textures
     - Rigidbody extensions for performing common physics operations on Rigidbodies and their attached colliders
   - A small Debug Drawing library 
     - For drawing dots, lines etc. on the screen
