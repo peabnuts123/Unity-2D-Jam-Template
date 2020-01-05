@@ -2,28 +2,28 @@
 
 This is a project template for getting up-and-running quickly for game jams. It is configured for creating 2D games in Unity. Included are a bunch of common plugins, code and prefabs that I use when developing games. This is to save on overhead that would otherwise occur during the jam, setting up a new project and copying over any specific library code from other games.
 
-The code included is all focused on automation and making code easier to write, it does not "pre-code" any features or mechanics. 
+The code included is all focused on automation and making code easier to write, it does not "pre-code" any features or mechanics.
 
 ## Contents
 
 The project currently includes:
 
 **Plugins**
-  - [Zenject](https://github.com/modesttree/Zenject) 
+  - [Zenject](https://github.com/modesttree/Zenject)
     - A dependency injection framework, for implementing a [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance) pattern in developing.
-  - [NotNullAttribute](https://github.com/redbluegames/unity-notnullattribute) 
+  - [NotNullAttribute](https://github.com/redbluegames/unity-notnullattribute)
     - A C# attribute for marking Serialized properties in the Unity inspector as required.
-    - A console error is logged, and the game is prevented from running at all (not just when your GameObject enters the scene) whenever any "Not Null" fields are null. 
+    - A console error is logged, and the game is prevented from running at all (not just when your GameObject enters the scene) whenever any "Not Null" fields are null.
     - Very useful for reducing errors in the Unity Editor, especially for non-programmer contributors.
 
 **Scripts**
   - A small Easing library
     - Written by me, for adding juice to your game.
-  - A bunch of utility extension methods 
+  - A bunch of utility extension methods
     - Vector extensions for fluently manipulating vectors
     - Texture extensions for performing common operations on textures
     - Rigidbody extensions for performing common physics operations on Rigidbodies and their attached colliders
-  - A small Debug Drawing library 
+  - A small Debug Drawing library
     - For drawing dots, lines etc. on the screen
   - PathStack
     - Class for easily working with FileSystem paths
@@ -35,7 +35,7 @@ The project currently includes:
     - Reminder: You cannot do any operations on Unity objects from a background thread
   - MasterInstaller
     - An "Installer" instance for Zenject that wires up a few simple concepts
-    - Sets up Singleton reference to ThreadedCoroutine 
+    - Sets up Singleton reference to ThreadedCoroutine
     - Has some quick dependency injection hooks for injecting sibling components, instead of calling `GetComponent<T>()` all the time
 
 **Prefabs**
@@ -53,6 +53,9 @@ The project has the following structure:
   Assets/
   ├─── Audio/
   │    # files and music
+  │
+  ├─── Fonts/
+  │    # Custom fonts
   │
   ├─── Materials/
   │    # Physics or Visual materials
@@ -77,7 +80,7 @@ The project has the following structure:
     │    #   e.g. "PlayerHoldable" etc.
     │
     ├─── Config
-    │    # Configuration scripts e.g. Zenject Installers
+    │    # Configuration scripts e.g. Zenject Installers, Constants
     │
     ├─── Entities
     │    # Scripts specific to certain objects in your game
@@ -90,3 +93,6 @@ The project has the following structure:
          # All sorts of raw coding logic that exists as
          #   a utility for other code
 ```
+
+## TODO backlog
+  - [ ] Pause menu (Resume, quit to main menu, quit game)
