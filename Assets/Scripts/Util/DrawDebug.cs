@@ -1,6 +1,9 @@
 using System;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public static class DrawDebug
 {
@@ -70,11 +73,13 @@ public static class DrawDebug
         }
     }
 
-    public static void Label(String text, Vector2 position) 
+    public static void Label(String text, Vector2 position)
     {
+#if UNITY_EDITOR
         Color oldColor = GUI.color;
         GUI.color = Color.red;
         Handles.Label(position, text);
         GUI.color = oldColor;
+#endif
     }
 }

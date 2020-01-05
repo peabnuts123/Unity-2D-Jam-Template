@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using UnityEditor;
 using UnityEngine;
 
 public class ThreadedCoroutine : MonoBehaviour
@@ -158,7 +157,7 @@ public class ThreadContainer
     // Error instance, stored when any error occurs
     public Exception Error;
     // String-keyed collection of results, populated
-    //  by thread-run work function, and read from 
+    //  by thread-run work function, and read from
     //  main Unity thread
     private IDictionary<string, object> Results;
     private bool markedForDeletion;
