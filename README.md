@@ -48,6 +48,8 @@ The project currently includes:
 **Scenes**
   - Game.unity
     - Basic scene set up and ready to go for development, contains a _SceneContext instance and things.
+  - Main Menu.unity
+    - A sample Menu for playing your game. Has a screen for displaying a simple list of credits, and an "Exit" option.
 
 ## Folder Structure
 
