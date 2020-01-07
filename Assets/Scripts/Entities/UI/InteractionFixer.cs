@@ -26,7 +26,7 @@ public class InteractionFixer : MonoBehaviour
         // If there's nothing selected and you press a keyboard/joystick/button, select something
         // @NOTE that it is assumed that different panels will update `EventSystem.current.firstSelectedGameObject`
         //  as they are enabled / disabled
-        if (!IsSelected() && Mathf.Abs(Input.GetAxis("Vertical")) > 0.01)
+        if (!IsSelected() && Input.GetButton("Vertical"))
         {
             EventSystem.current.SetSelectedGameObject(EventSystem.current.firstSelectedGameObject);
         }
