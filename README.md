@@ -1,8 +1,8 @@
 # 2D Unity Game Jam Template
 
-This is a project template for getting up-and-running quickly for game jams. It is configured for creating 2D games in Unity. Included are a bunch of common plugins, code and prefabs that I use when developing games. This is to save on overhead that would otherwise occur during the jam, setting up a new project and copying over any specific library code from other games.
+This is a project template for getting up-and-running quickly for game jams. It is configured for creating 2D games in Unity. Included are a bunch of common plugins, code and prefabs I use, a main menu and pause functionality, and some UI SFX. This is to save on overhead that would otherwise occur during the jam, setting up a new project and copying over any specific library code from other games.
 
-The code included is all focused on automation and making code easier to write, it does not "pre-code" any features or mechanics.
+The code included is all focused on automation and making code easier to write, it does not "pre-code" any features or mechanics (beyond menus).
 
 ## Contents
 
@@ -42,6 +42,9 @@ The project currently includes:
   - _SceneContext
     - An object to add to your scene to pre-configure Zenject stuff
 
+**Audio**
+  - [Kenney.nl](https://kenney.nl/)'s superb [UI Audio](https://www.kenney.nl/assets/ui-audio) SFX pack, licensed under [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/)
+
 **Scenes**
   - Game.unity
     - Basic scene set up and ready to go for development, contains a _SceneContext instance and things.
@@ -60,7 +63,7 @@ The project has the following structure:
   ├─── Materials/
   │    # Physics or Visual materials
   │
-  ├─── Media/
+  ├─── Images/
   │    # Image assets, textures, etc.
   │
   ├─── Plugins/
@@ -93,6 +96,3 @@ The project has the following structure:
          # All sorts of raw coding logic that exists as
          #   a utility for other code
 ```
-
-## TODO backlog
-  - [ ] Pause menu (Resume, quit to main menu, quit game)
